@@ -13,6 +13,8 @@
 
 #####################################################
 
+# PLEASE EDIT THESE VARIABLES WITH YOUR OWN INFORMATION!
+
 MY_PUBLIC_IP=162.xxx.xxx.xxx        #Your public IPV4, find it at:   https://www.whatismyip.com/
 MY_NETWORK_DEVICE=wlan0             #Find it with:                   nmcli | grep -w connected
 MY_DEFAULT_GATEWAY=192.168.1.254    #Find it after the word 'via':   ip route | grep -w default
