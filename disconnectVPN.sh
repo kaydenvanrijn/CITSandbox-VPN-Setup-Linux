@@ -1,3 +1,5 @@
+# PLEASE EDIT THESE VARIABLES WITH YOUR OWN INFORMATION!
+
 MY_PUBLIC_IP=162.xxx.xxx.240        #Your public IPV4, find it at:   https://www.whatismyip.com/
 MY_DEFAULT_GATEWAY=192.168.1.254    #Find it after the word 'via':   ip route | grep -w default
 VPN_IP=xxx.185.xxx.x7               #Find it on canvas
