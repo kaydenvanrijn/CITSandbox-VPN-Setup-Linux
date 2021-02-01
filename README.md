@@ -1,3 +1,9 @@
+# PUT THE FILE IN A FOLDER
+- cd /path/to/folder
+- sudo chmod ug=rx ./configureVPN.sh
+
+- sudo ./configureVPN.sh
+
 # PLEASE READ THE OUTPUTS GIVEN
 
 This is for linux users attempting to connect the CIT Sandbox VPN
