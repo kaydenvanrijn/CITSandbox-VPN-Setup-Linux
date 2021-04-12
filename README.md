@@ -12,13 +12,13 @@ This is for linux users attempting to connect the CIT Sandbox VPN
 
 ## For Ubuntu & Debian
 - apt-get update
-- apt-get -y install strongswan xl2tpd
+- apt-get -y install strongswan xl2tpd networkmanager
  
 ## For RHEL/CentOS
 - yum -y install epel-release
-- yum --enablerepo=epel -y install strongswan xl2tpd
+- yum --enablerepo=epel -y install strongswan xl2tpd networkmanager
  
-- yum -y install strongswan xl2tpd
+- yum -y install strongswan xl2tpd networkmanager
 
 ## For Arch
-- sudo pacman -S xl2tpd strongswan
+- sudo pacman -S xl2tpd strongswan networkmanager
