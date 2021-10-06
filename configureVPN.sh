@@ -181,7 +181,7 @@ connect-delay 5000
 name $VPN_USERNAME
 password $VPN_PASSWORD
 EOF
- 
+
 chmod 600 /etc/ppp/options.l2tpd.client
 
 echo "..DONE!"; echo;
@@ -244,7 +244,7 @@ sleep 4
 # PRINT IP
 echo "Connected! Your IPv4 should be $VPN_IP:"
 
-printf "Your IPv4 is: " 
+printf "Your IPv4 is: "
 echo "\`wget -qO- http://ipv4.icanhazip.com\`"; echo;
 
 # SSH
@@ -253,7 +253,7 @@ read -r answer
 
 echo;
 
-if [ "$answer" != "${answer#[Nn]}" ] ;then
+if [ \$answer != \${answer#[Nn]} ] ;then
     echo "You answered no! To connect to your terminal please type: ssh yourusernameORroot@$MY_LINUX_VM_IP";
 else
     echo "Connecting to your terminal...";
@@ -262,7 +262,7 @@ fi
 
 printf "All done! To disconnect, please run: sudo \`pwd\`"; echo /disconnect_citVPN.sh
 EOF
- 
+
 chmod ug=rwx ./connect_citVPN.sh
 
 echo "..DONE!"; echo;
@@ -293,10 +293,10 @@ echo "..DONE!"; echo;
 # PRINT IP
 echo "Disconnected! Your IPv4 should be $MY_IP:"
 sleep 2
-printf "Your IPv4 is: " 
+printf "Your IPv4 is: "
 echo "\`wget -qO- http://ipv4.icanhazip.com\`";
 EOF
- 
+
 chmod ug=rwx ./disconnect_citVPN.sh
 
 echo "..DONE!"; echo;
