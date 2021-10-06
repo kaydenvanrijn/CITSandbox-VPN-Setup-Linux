@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Written by Kayden van Rijn
 # Saturday, January 31st 2021
