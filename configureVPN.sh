@@ -191,8 +191,8 @@ echo "..DONE!"; echo;
 #citVPN.sh
 echo "Writing connect_citVPN.sh..."
 
-touch ./connect_citVPN.sh
-cat > ./connect_citVPN.sh <<EOF
+touch connect_citVPN.sh
+cat > connect_citVPN.sh <<EOF
 # ADD VPN CONTROLLER
 
 echo "Adding VPN controller file.."
@@ -263,15 +263,15 @@ fi
 printf "All done! To disconnect, please run: sudo \`pwd\`"; echo /disconnect_citVPN.sh
 EOF
 
-chmod ug=rwx ./connect_citVPN.sh
+chmod ug=rwx connect_citVPN.sh
 
 echo "..DONE!"; echo;
 
 #disconnect_citVPN.sh
 echo "Writing disconnect_citVPN.sh..."
 
-touch ./disconnect_citVPN.sh
-cat > ./disconnect_citVPN.sh <<EOF
+touch disconnect_citVPN.sh
+cat > disconnect_citVPN.sh <<EOF
 # DELETE THE ROUTES
 echo "Deleting routes.."
 ip route del default dev ppp0
@@ -297,7 +297,7 @@ printf "Your IPv4 is: "
 echo "\`wget -qO- http://ipv4.icanhazip.com\`";
 EOF
 
-chmod ug=rwx ./disconnect_citVPN.sh
+chmod ug=rwx disconnect_citVPN.sh
 
 echo "..DONE!"; echo;
 
