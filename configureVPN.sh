@@ -193,6 +193,8 @@ echo "Writing connect_citVPN.sh..."
 
 touch ./connect_citVPN.sh
 cat > ./connect_citVPN.sh <<EOF
+#!/usr/bin/env bash
+
 # ADD VPN CONTROLLER
 
 echo "Adding VPN controller file.."
@@ -272,6 +274,8 @@ echo "Writing disconnect_citVPN.sh..."
 
 touch ./disconnect_citVPN.sh
 cat > ./disconnect_citVPN.sh <<EOF
+#!/usr/bin/env bash
+
 # DELETE THE ROUTES
 echo "Deleting routes.."
 ip route del default dev ppp0
