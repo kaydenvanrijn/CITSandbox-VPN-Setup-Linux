@@ -1,4 +1,4 @@
-# Lethrbidge College CIT Sandbox VPN Setup for Linux
+# Lethbridge College CIT Sandbox VPN Setup for Linux
 This is for linux users attempting to connect the CIT Sandbox VPN
 
 ## Prerequisites
